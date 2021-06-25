@@ -3,4 +3,8 @@ export class Person01 {
     this.age = age
     this.lifeExp = lifeExp
   }
+  mercuryAge() {
+
+  }
 }
+

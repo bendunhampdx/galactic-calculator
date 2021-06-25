@@ -9,4 +9,10 @@ describe('Person01', () => {
     let newPerson = new Person01(75, 120);
     expect(newPerson.lifeExp).toBeDefined();
   });
+  test('should correctly return age of person01 in mercury years', () => {
+    let newMercuryAge = new Person01(75);
+    newMercuryAge.mercuryAge();
+    expect(newMercuryAge.mercuryAge).toEqual(18);
+  });
 });
+
