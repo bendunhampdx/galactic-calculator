@@ -44,8 +44,8 @@ export class Person01 {
     return this.venusLife
   }
   marsLifeEx() {
-    // this.marsLifeExp = this.lifeExp * 1.88
-    // return this.marsLifeExp;
+    this.marsLifeExp = this.lifeExp * 1.88
+    return this.marsLifeExp;
     }
 }
 
