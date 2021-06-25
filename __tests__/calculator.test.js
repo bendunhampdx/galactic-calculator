@@ -70,5 +70,12 @@ describe('Person01', () => {
     jupiterLifeExp.jupiterLifeEx();
     expect(jupiterLifeExp.jupiterLifeExp).toBeCloseTo(1423.2);
   });
+  test('should correctly return life left of person01 on jupiter', () => {
+    let jupiterLifeLeft = new Person01(75,120);
+    jupiterLifeLeft.jupiterAge();
+    jupiterLifeLeft.jupiterLifeEx();
+    jupiterLifeLeft.jupiterLifeLeft();
+    expect(jupiterLifeLeft.jupiterLife).toBeCloseTo(533.7);
+  });
 });
 
