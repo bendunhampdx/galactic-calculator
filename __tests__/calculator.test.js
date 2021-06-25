@@ -53,5 +53,10 @@ describe('Person01', () => {
     venusLifeLeft.venusLifeLeft();
     expect(venusLifeLeft.venusLife).toBeCloseTo(27.9);
   });
+  test('should correctly return life expectency of person01 on mars', () => {
+    let marsLifeExp = new Person01(75,120);
+    marsLifeExp.marsLifeEx();
+    expect(marsLifeExp.marsLifeExp).toBeCloseTo(225.6);
+  });
 });
 
