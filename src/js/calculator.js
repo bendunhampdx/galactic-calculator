@@ -18,5 +18,8 @@ export class Person01 {
   jupiterAge() {
     this.newJupiterAge = this.age * 11.86
   }
+  mercuryLifeExp() {
+    
+  }
 }
 
