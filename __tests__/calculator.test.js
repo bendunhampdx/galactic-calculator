@@ -30,9 +30,16 @@ describe('Person01', () => {
     expect(newJupiterAge.newJupiterAge).toEqual(889.5);
   });
   test('should correctly return life expectency of person01 on mercury', () => {
-    let newMercuryLifeExp = new Person01(75, 120);
-    newMercuryLifeExp.mercuryLifeExp();
-    expect(newMercuryLifeExp.mercLifeLeft).toBeCloseTo(10.8);
+    let mercuryLifeExp = new Person01(75,120);
+    mercuryLifeExp.mercuryLifeEx();
+    expect(mercuryLifeExp.mercuryLifeExp).toBeCloseTo(28.8);
+  });
+  test('should correctly return life left of person01 on mercury', () => {
+    let mercuryLifeLeft = new Person01(75,120);
+    mercuryLifeLeft.mercuryAge()
+    mercuryLifeLeft.mercuryLifeEx();
+    mercuryLifeLeft.mercuryLifeLeft();
+    expect(mercuryLifeLeft.mercuryLife).toBeCloseTo(10.8);
   });
 });
 

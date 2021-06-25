@@ -3,6 +3,9 @@ export class Person01 {
     this.age = age
     this.lifeExp = lifeExp
     this.newMercuryAge = 0
+    this.mercuryLifeExp = 0
+    this.mercuryLife = 0
+
   };
   mercuryAge() {
     this.newMercuryAge = this.age * .24;
@@ -18,11 +21,26 @@ export class Person01 {
   }
   jupiterAge() {
     this.newJupiterAge = this.age * 11.86
+    return this.newjupiterAge
   }
-  mercuryLifeExp() {
-    let mercLifeExp = this.lifeExp * .24
-    let mercLifeLeft = mercLifeExp - this.newMercuryAge
-    return mercLifeLeft;
+  mercuryLifeEx() {
+    this.mercuryLifeExp = this.lifeExp * .24
+    return this.mercuryLifeExp;
+    }
+  mercuryLifeLeft() {
+    this.mercuryLife = this.mercuryLifeExp - this.newMercuryAge
+    return this.mercuryLife
   }
-}
+  }
+
+
+// mercuryLifeEx() {
+//   this.mercuryLifeExp = this.lifeExp * .24
+//   let newMercuryLifeExp = this.mercuryAge - this.mercuryLifeExp
+//   if (newMercuryLifeExp <= 0) {
+//     newMercuryLifeExp = newMercuryLifeExp * -1;
+//   }else {
+//     newMercuryLifeExp = newMercuryLifeExp * -1;
+//   return this.newMercuryLifeExp;
+//   }
 
