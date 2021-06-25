@@ -16,7 +16,7 @@ export class Person01 {
     return this.newMarsAge;
   }
   jupiterAge() {
-    
+    this.newJupiterAge = this.age * 11.86
   }
 }
 
