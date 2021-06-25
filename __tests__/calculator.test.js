@@ -58,5 +58,12 @@ describe('Person01', () => {
     marsLifeExp.marsLifeEx();
     expect(marsLifeExp.marsLifeExp).toBeCloseTo(225.6);
   });
+  test('should correctly return life left of person01 on mars', () => {
+    let marsLifeLeft = new Person01(75,120);
+    marsLifeLeft.marsAge();
+    marsLifeLeft.marsLifeEx();
+    marsLifeLeft.marsLifeLeft();
+    expect(marsLifeLeft.marsLife).toBeCloseTo(84.6);
+  });
 });
 
