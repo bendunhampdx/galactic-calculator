@@ -12,7 +12,7 @@ describe('Person01', () => {
   test('should correctly return age of person01 in mercury years', () => {
     let newMercuryAge = new Person01(75);
     newMercuryAge.mercuryAge();
-    expect(newMercuryAge.mercuryAge).toEqual(18);
+    expect(newMercuryAge.newMercuryAge).toEqual(18);
   });
 });
 
