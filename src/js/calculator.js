@@ -8,8 +8,8 @@ export class Person01 {
     return this.newMercuryAge;
   };
   venusAge() {
-    // this.newVenusAge = this.age * .62;
-    // // return this.newMercuryAge;
+    this.newVenusAge = this.age * .62;
+    return this.newMercuryAge;
   };
 }
 
