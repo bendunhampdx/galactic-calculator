@@ -5,6 +5,8 @@ export class Person01 {
     this.newMercuryAge = 0
     this.mercuryLifeExp = 0
     this.mercuryLife = 0
+    this.venusLifeExp = 0
+    this.venusLife = 0
 
   };
   mercuryAge() {
@@ -13,7 +15,7 @@ export class Person01 {
   };
   venusAge() {
     this.newVenusAge = this.age * .62;
-    return this.newMercuryAge;
+    return this.newVenusAge;
   };
   marsAge() {
     this.newMarsAge = this.age * 1.88
@@ -35,7 +37,11 @@ export class Person01 {
     this.venusLifeExp = this.lifeExp * .62
     return this.venusLifeExp;
     }
+  venusLifeLeft() {
+    this.venusLife = this.venusLifeExp - this.newVenusAge
+    return this.venusLife
   }
+}
 
 
 // mercuryLifeEx() {

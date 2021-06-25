@@ -36,7 +36,7 @@ describe('Person01', () => {
   });
   test('should correctly return life left of person01 on mercury', () => {
     let mercuryLifeLeft = new Person01(75,120);
-    mercuryLifeLeft.mercuryAge()
+    mercuryLifeLeft.mercuryAge();
     mercuryLifeLeft.mercuryLifeEx();
     mercuryLifeLeft.mercuryLifeLeft();
     expect(mercuryLifeLeft.mercuryLife).toBeCloseTo(10.8);
@@ -45,6 +45,13 @@ describe('Person01', () => {
     let venusLifeExp = new Person01(75,120);
     venusLifeExp.venusLifeEx();
     expect(venusLifeExp.venusLifeExp).toBeCloseTo(74.4);
+  });
+  test('should correctly return life left of person01 on venus', () => {
+    let venusLifeLeft = new Person01(75,120);
+    venusLifeLeft.venusAge();
+    venusLifeLeft.venusLifeEx();
+    venusLifeLeft.venusLifeLeft();
+    expect(venusLifeLeft.venusLife).toBeCloseTo(27.9);
   });
 });
 
