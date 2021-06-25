@@ -41,5 +41,10 @@ describe('Person01', () => {
     mercuryLifeLeft.mercuryLifeLeft();
     expect(mercuryLifeLeft.mercuryLife).toBeCloseTo(10.8);
   });
+  test('should correctly return life expectency of person01 on venus', () => {
+    let venusLifeExp = new Person01(75,120);
+    venusLifeExp.venusLifeEx();
+    expect(venusLifeExp.venusLifeExp).toBeCloseTo(74.4);
+  });
 });
 

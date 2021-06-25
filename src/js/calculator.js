@@ -31,6 +31,10 @@ export class Person01 {
     this.mercuryLife = this.mercuryLifeExp - this.newMercuryAge
     return this.mercuryLife
   }
+  venusLifeEx() {
+    // this.venusLifeExp = this.lifeExp * .24
+    // return this.venusLifeExp;
+    }
   }
 
 
