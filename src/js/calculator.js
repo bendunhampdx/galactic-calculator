@@ -32,8 +32,8 @@ export class Person01 {
     return this.mercuryLife
   }
   venusLifeEx() {
-    // this.venusLifeExp = this.lifeExp * .24
-    // return this.venusLifeExp;
+    this.venusLifeExp = this.lifeExp * .62
+    return this.venusLifeExp;
     }
   }
 
