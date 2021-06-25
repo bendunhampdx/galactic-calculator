@@ -15,10 +15,10 @@
 
 ## Description
 * _This application will provide the business logic for an application meant to allow a user to enter their age and life expectency and discover the equivilents of those properties on the planets Mercury, Venus, Mars, and Jupiter._
-## Setup/Installation Requirements
 
 
-## Set Up Requirements
+
+## Set Up Instructions/Requirements
 * _clone project to your desktop_
 * _in terminal run : get clone https://github.com/bendunhampdx/galactic-calculator.git_
 * _navigate to project by running the command cd galactic-calculator_

@@ -56,8 +56,8 @@ export class Person01 {
       this.jupiterLifeExp = this.lifeExp * 11.86;
       return this.jupiterLifeExp;
       };
-      jupiterLifeLeft() {
-        this.jupiterLife = this.jupiterLifeExp - this.newJupiterAge;
-        return this.jupiterLife;
+    jupiterLifeLeft() {
+      this.jupiterLife = this.jupiterLifeExp - this.newJupiterAge;
+      return this.jupiterLife;
       };
 }
