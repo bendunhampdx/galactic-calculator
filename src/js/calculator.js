@@ -7,5 +7,9 @@ export class Person01 {
     this.newMercuryAge = this.age * .24;
     return this.newMercuryAge;
   };
+  venusAge() {
+    // this.newVenusAge = this.age * .62;
+    // // return this.newMercuryAge;
+  };
 }
 

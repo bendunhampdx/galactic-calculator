@@ -14,5 +14,10 @@ describe('Person01', () => {
     newMercuryAge.mercuryAge();
     expect(newMercuryAge.newMercuryAge).toEqual(18);
   });
+  test('should correctly return age of person01 in venus years', () => {
+    let newVenusAge = new Person01(75);
+    newVenusAge.venusAge();
+    expect(newVenusAge.newVenusAge).toEqual(46.50);
+  });
 });
 
