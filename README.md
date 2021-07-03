@@ -25,6 +25,7 @@
 * _run command .code to open in VS Code_
 * _run command npm install to install dependencies_
 * _run command npm start to open page in a live server_
+* _In order to run tests, enter 'npm run test' in the terminal to see if your tests are passing or failing._
 
 ## Known Bugs
 

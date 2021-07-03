@@ -41,6 +41,13 @@ describe('Person01', () => {
     mercuryLifeLeft.mercuryLifeLeft();
     expect(mercuryLifeLeft.mercuryLife).toBeCloseTo(10.8);
   });
+  test('should correctly return life person01 has lived past expectency', () => {
+    let mercuryLifeLived = new Person01(125,120);
+    mercuryLifeLived.mercuryAge();
+    mercuryLifeLived.mercuryLifeEx();
+    mercuryLifeLived.mercuryLifeLived();
+    expect(mercuryLifeLived.mercuryLifeBeyond).toBeCloseTo(1.2);
+  });
   test('should correctly return life expectency of person01 on venus', () => {
     let venusLifeExp = new Person01(75,120);
     venusLifeExp.venusLifeEx();
@@ -52,6 +59,13 @@ describe('Person01', () => {
     venusLifeLeft.venusLifeEx();
     venusLifeLeft.venusLifeLeft();
     expect(venusLifeLeft.venusLife).toBeCloseTo(27.9);
+  });
+  test('should correctly return life person01 has lived past expectency', () => {
+    let venusLifeLived = new Person01(125,120);
+    venusLifeLived.venusAge();
+    venusLifeLived.venusLifeEx();
+    venusLifeLived.venusLifeLived();
+    expect(venusLifeLived.venusLifeBeyond).toBeCloseTo(3.1);
   });
   test('should correctly return life expectency of person01 on mars', () => {
     let marsLifeExp = new Person01(75,120);
@@ -65,6 +79,13 @@ describe('Person01', () => {
     marsLifeLeft.marsLifeLeft();
     expect(marsLifeLeft.marsLife).toBeCloseTo(84.6);
   });
+  test('should correctly return life person01 has lived past expectency', () => {
+    let marsLifeLived = new Person01(125,120);
+    marsLifeLived.marsAge();
+    marsLifeLived.marsLifeEx();
+    marsLifeLived.marsLifeLived();
+    expect(marsLifeLived.marsLifeBeyond).toBeCloseTo(9.4);
+  });
   test('should correctly return life expectency of person01 on jupiter', () => {
     let jupiterLifeExp = new Person01(75,120);
     jupiterLifeExp.jupiterLifeEx();
@@ -76,6 +97,13 @@ describe('Person01', () => {
     jupiterLifeLeft.jupiterLifeEx();
     jupiterLifeLeft.jupiterLifeLeft();
     expect(jupiterLifeLeft.jupiterLife).toBeCloseTo(533.7);
+  });
+  test('should correctly return life person01 has lived past expectency', () => {
+    let jupiterLifeLived = new Person01(125,120);
+    jupiterLifeLived.jupiterAge();
+    jupiterLifeLived.jupiterLifeEx();
+    jupiterLifeLived.jupiterLifeLived();
+    expect(jupiterLifeLived.jupiterLifeBeyond).toBeCloseTo(59.3);
   });
 });
 
