@@ -65,7 +65,13 @@ export class Person01 {
     return this.marsLifeExp;
   };
   marsLifeLeft() {
-    
+    this.marsLife = this.marsLifeExp - this.newMarsAge;
+    if (this.marsLife >= 0) {
+      this.marsLife = `You have ${this.marsLife} years left to live on mars.` 
+    } else {
+      this.marsLife = `You have lived past you life on mars by ${this.marsLife * -1} years.`
+  };
+  return this.marsLife;
   };
   jupiterLifeEx() {
     this.jupiterLifeExp = this.lifeExp * 11.86;
