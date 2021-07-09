@@ -39,7 +39,13 @@ export class Person01 {
     return this.mercuryLifeExp;
   };
   mercuryLifeLeft() {
-    
+    this.mercuryLife = this.mercuryLifeExp - this.newMercuryAge;
+    if (this.mercuryLife >= 0) {
+      this.mercuryLife = `You have ${this.mercuryLife} years left to live on mercury.` 
+    } else {
+      this.mercuryLife = `You have lived past you life on mercury by ${this.mercuryLife * -1} years.`
+    }
+    return this.mercuryLife;
   };
 
 
