@@ -97,7 +97,7 @@ describe('Person01', () => {
     jupiterLifeLeft.jupiterAge();
     jupiterLifeLeft.jupiterLifeEx();
     jupiterLifeLeft.jupiterLifeLeft();
-    expect(jupiterLifeLeft.jupiterLife).toEqual(`You have 1126.7 years left to live on jupiter.`);
+    expect(jupiterLifeLeft.jupiterLife).toEqual(`You have 1126.6999999999998 years left to live on jupiter.`);
   });
   test('should correctly return life lived past of person01 on jupiter', () => {
     let jupiterLifeLeft = new Person01(500,120);
