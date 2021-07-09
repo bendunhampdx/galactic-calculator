@@ -65,12 +65,7 @@ export class Person01 {
     return this.marsLifeExp;
   };
   marsLifeLeft() {
-    this.marsLife = this.marsLifeExp - this.newMarsAge;
-    return this.marsLife;
-  };
-  marsLifeLived() {
-    this.marsLifeBeyond = this.newMarsAge - this.marsLifeExp;
-    return this.marsLifeBeyond;
+    
   };
   jupiterLifeEx() {
     this.jupiterLifeExp = this.lifeExp * 11.86;
