@@ -93,18 +93,18 @@ describe('Person01', () => {
     expect(jupiterLifeExp.jupiterLifeExp).toBeCloseTo(1423.2);
   });
   test('should correctly return life left of person01 on jupiter', () => {
-    let jupiterLifeLeft = new Person01(75,120);
+    let jupiterLifeLeft = new Person01(25,120);
     jupiterLifeLeft.jupiterAge();
     jupiterLifeLeft.jupiterLifeEx();
     jupiterLifeLeft.jupiterLifeLeft();
-    expect(jupiterLifeLeft.jupiterLife).toBeCloseTo(533.7);
+    expect(jupiterLifeLeft.jupiterLife).toEqual(`You have 1126.7 years left to live on jupiter.`);
   });
-  test('should correctly return life person01 has lived past expectency', () => {
-    let jupiterLifeLived = new Person01(125,120);
-    jupiterLifeLived.jupiterAge();
-    jupiterLifeLived.jupiterLifeEx();
-    jupiterLifeLived.jupiterLifeLived();
-    expect(jupiterLifeLived.jupiterLifeBeyond).toBeCloseTo(59.3);
+  test('should correctly return life lived past of person01 on jupiter', () => {
+    let jupiterLifeLeft = new Person01(500,120);
+    jupiterLifeLeft.jupiterAge();
+    jupiterLifeLeft.jupiterLifeEx();
+    jupiterLifeLeft.jupiterLifeLeft();
+    expect(jupiterLifeLeft.jupiterLife).toEqual(`You have lived past you life on jupiter by 4506.8 years.`);
   });
 });
 

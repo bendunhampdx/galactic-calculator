@@ -78,11 +78,7 @@ export class Person01 {
     return this.jupiterLifeExp;
   };
   jupiterLifeLeft() {
-    this.jupiterLife = this.jupiterLifeExp - this.newJupiterAge;
-    return this.jupiterLife;
-  };
-  jupiterLifeLived() {
-    this.jupiterLifeBeyond = this.newJupiterAge - this.jupiterLifeExp;
-    return this.jupiterLifeBeyond;
-  };
+   
+ 
+  }
 };
