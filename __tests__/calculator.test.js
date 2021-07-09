@@ -1,4 +1,4 @@
-import {Person01} from '../src/js/calculator.js'
+import { Person01 } from '../src/js/calculator.js'
 
 describe('Person01', () => {
   test('should correctly create a person class object with age property', () => {
@@ -30,77 +30,77 @@ describe('Person01', () => {
     expect(newJupiterAge.newJupiterAge).toEqual(889.5);
   });
   test('should correctly return life expectency of person01 on mercury', () => {
-    let mercuryLifeExp = new Person01(75,120);
+    let mercuryLifeExp = new Person01(75, 120);
     mercuryLifeExp.mercuryLifeEx();
     expect(mercuryLifeExp.mercuryLifeExp).toBeCloseTo(28.8);
   });
   test('should correctly return life left of person01 on mercury', () => {
-    let mercuryLifeLeft = new Person01(25,120);
+    let mercuryLifeLeft = new Person01(25, 120);
     mercuryLifeLeft.mercuryAge();
     mercuryLifeLeft.mercuryLifeEx();
     mercuryLifeLeft.mercuryLifeLeft();
-    expect(mercuryLifeLeft.mercuryLife).toEqual(`You have 22.799999999999997 years left to live on mercury.` );
+    expect(mercuryLifeLeft.mercuryLife).toEqual(`You have 22.799999999999997 years left to live on mercury.`);
   });
   test('should correctly return life lived past of person01 on mercury', () => {
-    let mercuryLifeLeft = new Person01(500,120);
+    let mercuryLifeLeft = new Person01(500, 120);
     mercuryLifeLeft.mercuryAge();
     mercuryLifeLeft.mercuryLifeEx();
     mercuryLifeLeft.mercuryLifeLeft();
     expect(mercuryLifeLeft.mercuryLife).toEqual(`You have lived past you life on mercury by 91.2 years.`);
   });
-  
+
   test('should correctly return life expectency of person01 on venus', () => {
-    let venusLifeExp = new Person01(75,120);
+    let venusLifeExp = new Person01(75, 120);
     venusLifeExp.venusLifeEx();
     expect(venusLifeExp.venusLifeExp).toBeCloseTo(74.4);
   });
   test('should correctly return life left of person01 on venus', () => {
-    let venusLifeLeft = new Person01(25,120);
+    let venusLifeLeft = new Person01(25, 120);
     venusLifeLeft.venusAge();
     venusLifeLeft.venusLifeEx();
     venusLifeLeft.venusLifeLeft();
-    expect(venusLifeLeft.venusLife).toEqual(`You have 58.900000000000006 years left to live on venus.` );
+    expect(venusLifeLeft.venusLife).toEqual(`You have 58.900000000000006 years left to live on venus.`);
   });
   test('should correctly return life lived past of person01 on venus', () => {
-    let venusLifeLeft = new Person01(500,120);
+    let venusLifeLeft = new Person01(500, 120);
     venusLifeLeft.venusAge();
     venusLifeLeft.venusLifeEx();
     venusLifeLeft.venusLifeLeft();
     expect(venusLifeLeft.venusLife).toEqual(`You have lived past you life on venus by 235.6 years.`);
   });
   test('should correctly return life expectency of person01 on mars', () => {
-    let marsLifeExp = new Person01(75,120);
+    let marsLifeExp = new Person01(75, 120);
     marsLifeExp.marsLifeEx();
     expect(marsLifeExp.marsLifeExp).toBeCloseTo(225.6);
   });
   test('should correctly return life left of person01 on mars', () => {
-    let marsLifeLeft = new Person01(25,120);
+    let marsLifeLeft = new Person01(25, 120);
     marsLifeLeft.marsAge();
     marsLifeLeft.marsLifeEx();
     marsLifeLeft.marsLifeLeft();
-    expect(marsLifeLeft.marsLife).toEqual(`You have 178.6 years left to live on mars.` );
+    expect(marsLifeLeft.marsLife).toEqual(`You have 178.6 years left to live on mars.`);
   });
   test('should correctly return life lived past of person01 on mars', () => {
-    let marsLifeLeft = new Person01(500,120);
+    let marsLifeLeft = new Person01(500, 120);
     marsLifeLeft.marsAge();
     marsLifeLeft.marsLifeEx();
     marsLifeLeft.marsLifeLeft();
     expect(marsLifeLeft.marsLife).toEqual(`You have lived past you life on mars by 714.4 years.`);
   });
   test('should correctly return life expectency of person01 on jupiter', () => {
-    let jupiterLifeExp = new Person01(75,120);
+    let jupiterLifeExp = new Person01(75, 120);
     jupiterLifeExp.jupiterLifeEx();
     expect(jupiterLifeExp.jupiterLifeExp).toBeCloseTo(1423.2);
   });
   test('should correctly return life left of person01 on jupiter', () => {
-    let jupiterLifeLeft = new Person01(25,120);
+    let jupiterLifeLeft = new Person01(25, 120);
     jupiterLifeLeft.jupiterAge();
     jupiterLifeLeft.jupiterLifeEx();
     jupiterLifeLeft.jupiterLifeLeft();
     expect(jupiterLifeLeft.jupiterLife).toEqual(`You have 1126.6999999999998 years left to live on jupiter.`);
   });
   test('should correctly return life lived past of person01 on jupiter', () => {
-    let jupiterLifeLeft = new Person01(500,120);
+    let jupiterLifeLeft = new Person01(500, 120);
     jupiterLifeLeft.jupiterAge();
     jupiterLifeLeft.jupiterLifeEx();
     jupiterLifeLeft.jupiterLifeLeft();
