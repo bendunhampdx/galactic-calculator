@@ -52,7 +52,13 @@ export class Person01 {
     return this.venusLifeExp;
   };
   venusLifeLeft() {
-   
+    this.venusLife = this.venusLifeExp - this.newVenusAge;
+    if (this.venusLife >= 0) {
+      this.venusLife = `You have ${this.venusLife} years left to live on venus.` 
+    } else {
+      this.venusLife = `You have lived past you life on venus by ${this.venusLife * -1} years.`
+  };
+  return this.venusLife;
   };
   marsLifeEx() {
     this.marsLifeExp = this.lifeExp * 1.88;

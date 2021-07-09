@@ -59,7 +59,7 @@ describe('Person01', () => {
     venusLifeLeft.venusAge();
     venusLifeLeft.venusLifeEx();
     venusLifeLeft.venusLifeLeft();
-    expect(venusLifeLeft.venusLife).toEqual(`You have 58.9 years left to live on venus.` );
+    expect(venusLifeLeft.venusLife).toEqual(`You have 58.900000000000006 years left to live on venus.` );
   });
   test('should correctly return life lived past of person01 on venus', () => {
     let venusLifeLeft = new Person01(500,120);
