@@ -55,18 +55,18 @@ describe('Person01', () => {
     expect(venusLifeExp.venusLifeExp).toBeCloseTo(74.4);
   });
   test('should correctly return life left of person01 on venus', () => {
-    let venusLifeLeft = new Person01(75,120);
+    let venusLifeLeft = new Person01(25,120);
     venusLifeLeft.venusAge();
     venusLifeLeft.venusLifeEx();
     venusLifeLeft.venusLifeLeft();
-    expect(venusLifeLeft.venusLife).toBeCloseTo(27.9);
+    expect(venusLifeLeft.venusLife).toEqual(`You have 58.9 years left to live on venus.` );
   });
-  test('should correctly return life person01 has lived past expectency', () => {
-    let venusLifeLived = new Person01(125,120);
-    venusLifeLived.venusAge();
-    venusLifeLived.venusLifeEx();
-    venusLifeLived.venusLifeLived();
-    expect(venusLifeLived.venusLifeBeyond).toBeCloseTo(3.1);
+  test('should correctly return life lived past of person01 on venus', () => {
+    let venusLifeLeft = new Person01(500,120);
+    venusLifeLeft.venusAge();
+    venusLifeLeft.venusLifeEx();
+    venusLifeLeft.venusLifeLeft();
+    expect(venusLifeLeft.venusLife).toEqual(`You have lived past you life on venus by 235.6 years.`);
   });
   test('should correctly return life expectency of person01 on mars', () => {
     let marsLifeExp = new Person01(75,120);

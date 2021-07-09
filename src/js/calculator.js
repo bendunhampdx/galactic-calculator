@@ -47,19 +47,12 @@ export class Person01 {
     }
     return this.mercuryLife;
   };
-
-
   venusLifeEx() {
     this.venusLifeExp = this.lifeExp * .62;
     return this.venusLifeExp;
   };
   venusLifeLeft() {
-    this.venusLife = this.venusLifeExp - this.newVenusAge;
-    return this.venusLife;
-  };
-  venusLifeLived() {
-    this.venusLifeBeyond = this.newVenusAge - this.venusLifeExp;
-    return this.venusLifeBeyond;
+   
   };
   marsLifeEx() {
     this.marsLifeExp = this.lifeExp * 1.88;
